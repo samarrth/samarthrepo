@@ -32,7 +32,7 @@ if(session.getAttribute("email")==null){
 		<h1>YOUR CART</h1>
 		<div class="cart-top">
 			<a href = index.jsp><button class = "cart-button">CONTINUE SHOPPING</button></a>
-			<button class = "cart-button">CHECKOUT</button>
+			
 		</div>
 		<div class="cart-bottom">
 			<div class="cart-info">

@@ -279,7 +279,7 @@ form input[type="button"]
 }
 h1
 {
-	padding-left: 120px;
+	padding-left: 80px;
 }
 .whysign span
 {
@@ -388,7 +388,7 @@ body
 /* Content */
 
 .content{
-    background-image: url();
+    background-image: url(cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 5%;
@@ -398,6 +398,7 @@ body
     align-items: flex-start;
     color: #424144;
     height: 100vh;
+    margin-bottom: 30px;
 }
 
 .content .head 

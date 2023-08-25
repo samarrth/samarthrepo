@@ -42,7 +42,7 @@
                 <a href="#">My Profile <i class="fas fa-caret-down"></i></a>
                 <ul>
                     <li><a href="profiledetails.jsp">View Profile</a></li>
-                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="editprofile.jsp">Edit Password</a></li>
                     <!-- Add more dropdown items as needed -->
                 </ul>
             </li>

@@ -37,7 +37,7 @@ if(session.getAttribute("email")==null){
             <h1>All records</h1>
             <div class="records">
 
-                <button> Add record</button>
+                
                 <div class="table-container">
                     <table>
                         <thead>

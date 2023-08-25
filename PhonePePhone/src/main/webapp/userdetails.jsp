@@ -93,7 +93,7 @@ if(session.getAttribute("email")==null){
 					<ul class="sidebarList">
 						<li class="sidebarListItem"><a href="profiledetails.jsp"><i
 								class="fa-solid fa-user"></i>Users </a></li>
-						<li class="sidebarListItem"><a href=""><i
+						<li class="sidebarListItem"><a href="orderdetails.jsp"><i
 								class="fa-solid fa-box-open"></i>Order details </a></li>
 
 					</ul>

@@ -54,7 +54,7 @@ if(session.getAttribute("email")==null){
 				<%
 				}
 				%>
-				<a href="product.jsp"><button>Add record</button></a>
+				
 				<div class="table-container">
 					<table>
 						<thead>
