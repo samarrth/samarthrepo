@@ -1,0 +1,199 @@
+@charset "ISO-8859-1";
+body{
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* admin navbar starts */
+.topbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.topbar .topbarWrapper{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .topbarWrapper .adminlogo{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+    cursor: pointer;
+}
+.topRight
+{
+	height:50%;
+}
+.topRight a
+{
+	
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	
+}
+.topRight a:hover
+{
+	border-bottom: 4px solid #f63e4e;
+}
+/* andmin navbar ends  */
+.admin-container{
+    display: flex;
+}
+
+/* admin sidebar  */
+.admin-container .sidebar{
+    flex: 1;
+    height: calc(100vh  - 50px);
+    background-color: rgb(192, 192, 192);
+    position: sticky;
+    top: 50px;
+}
+
+.admin-container .sidebar .sidebarWrapper{
+    padding: 29px;
+    columns: #555;
+}
+.admin-container .sidebar .sidebarWrapper .sidebarMenu{
+    margin-bottom: 10px;
+}
+.sidebarMenu .sidebarTitle{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.sidebarMenu .sidebarList{
+    list-style: none;
+    padding: 5px;
+
+}
+.sidebarMenu .sidebarList .sidebarListItem{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebarListItem a
+{
+	text-decoration: none;
+}
+.sidebarListItem a:hover
+{
+	color: aqua;
+}
+.sidebarMenu .sidebarList .sidebarListItem:hover{
+    
+    background-color: black;
+}
+/* admin sidebar ends  */
+
+
+
+.admin-container .otherpages{
+    flex:5;
+    height: calc(95vh  - 50px);
+    /* background-color: yellow; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+.otherpages h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* table  */
+
+/* .otherpages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.records {
+    margin-top: 20px;
+    /* overflow: auto; */
+    width: 100%;
+}
+
+.otherpages .records button{
+    margin: 10px;
+    background-color: rgb(132, 132, 233);
+    color: white;
+    font-weight: 999;
+
+}
+
+
+/* table */
+
+.otherpages .records .table-container{
+    max-height: 370px;
+    overflow: auto;
+    margin: 10px;
+}
+table{
+    border: 1px solid black;
+    border-collapse: separate;
+    white-space: nowrap;
+    min-width: max-content;
+}
+th{
+    position: sticky;
+    top: 0px;
+    background-color: teal;
+    color:white;
+}
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.otherpages .records .table-container table tbody{
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+} 
+table tbody tr td .deleteicon{
+    color: red;
+    margin: 0 10px;
+    font-size: 20px;
+    
+    
+}
+table tbody tr td .deleteicon:hover{
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+table tbody tr td .updateicon{
+    color: rgb(47, 234, 47);
+    margin: 0 10px;
+    font-size: 20px;
+}
+table tbody tr td .updateicon:hover{
+    background-color:  rgb(47, 234, 47) ;
+    padding: 10px;
+    color: white;
+}
+
+
+
+
+	

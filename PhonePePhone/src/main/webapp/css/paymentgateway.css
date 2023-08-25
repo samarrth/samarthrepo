@@ -1,0 +1,138 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+ 
+    background-color: #f9f9f9;
+}
+.container-wrapper {
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.payment-container {
+    max-width: 400px;
+    margin: 100px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.87);
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Add this to your existing paymentgateway.css file */
+
+.cart-container {
+	flex:1;
+    max-width: 400px;
+    margin: 100px 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.87);
+}
+
+.cart-summary {
+    text-align: center;
+}
+
+.summarty-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    margin: 65px 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.summary-item span:last-child {
+    font-weight: normal;
+}
+
+ .payment-button{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.payment-button :hover {
+    background-color: #0056b3;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.error-message
+{
+	color: red;
+	display: block;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
