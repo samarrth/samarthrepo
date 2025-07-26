@@ -1,0 +1,87 @@
+<div class="sales-dashboard">
+  <div class="dashboard-header">
+    <h1>Top 10 Distributors Sales Dashboard</h1>
+    <p>Comprehensive sales data analysis for primary and secondary sales</p>
+  </div>
+
+  <!-- Sales Volume Chart (Kg) -->
+  <div class="chart-container">
+    <div class="chart-header">
+      <h2>Sales Volume (Kg)</h2>
+      <p>Primary vs Secondary Sales Volume for Top 10 Distributors</p>
+    </div>
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [data]="barChartData"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [type]="barChartType">
+      </canvas>
+    </div>
+  </div>
+
+  <!-- Sales Amount Chart (₹) -->
+  <div class="chart-container">
+    <div class="chart-header">
+      <h2>Sales Amount (₹)</h2>
+      <p>Primary vs Secondary Sales Amount for Top 10 Distributors</p>
+    </div>
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [data]="barChartDataAmount"
+              [options]="barChartOptionsAmount"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [type]="barChartType">
+      </canvas>
+    </div>
+  </div>
+
+  <!-- Data Summary Table -->
+  <div class="data-summary">
+    <h3>Sales Data Summary</h3>
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Distributor</th>
+            <th>Secondary Sales Kg</th>
+            <th>Primary Sales Kg</th>
+            <th>Secondary Sales Amount (₹)</th>
+            <th>Primary Sales Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let distributor of distributors; let i = index">
+            <td>{{ distributor }}</td>
+            <td>{{ salesData.secondarySalesKg[i] | number }}</td>
+            <td>{{ salesData.primarySalesKg[i] | number }}</td>
+            <td>{{ salesData.secondarySalesAmount[i] | currency:'INR':'symbol':'1.0-0' }}</td>
+            <td>{{ salesData.primarySalesAmount[i] | currency:'INR':'symbol':'1.0-0' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Key Metrics -->
+  <div class="metrics-container">
+    <div class="metric-card">
+      <h4>Total Secondary Sales (Kg)</h4>
+      <p class="metric-value">{{ getTotalSecondaryKg() | number }}</p>
+    </div>
+    <div class="metric-card">
+      <h4>Total Primary Sales (Kg)</h4>
+      <p class="metric-value">{{ getTotalPrimaryKg() | number }}</p>
+    </div>
+    <div class="metric-card">
+      <h4>Total Secondary Sales (₹)</h4>
+      <p class="metric-value">{{ getTotalSecondaryAmount() | currency:'INR':'symbol':'1.0-0' }}</p>
+    </div>
+    <div class="metric-card">
+      <h4>Total Primary Sales (₹)</h4>
+      <p class="metric-value">{{ getTotalPrimaryAmount() | currency:'INR':'symbol':'1.0-0' }}</p>
+    </div>
+  </div>
+</div>
